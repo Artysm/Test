@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Le menu */
+.nav {
+  display: grid;
+  padding: 0;
+  justify-self: end;
+  align-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: start;
+  display: grid;
+  align-self: center;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav a {
+  min-width: 120px;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+a {
+  font-family: Inter;
+  color: hsl(236, 13%, 42%);
+}
+
+.nav li a::before{
+  content: "";
+  width: 100px;
+  height: 4px;
+  display: inline-grid;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.nav li a:hover::before{
+  transform: scale3d(1,1,1);
+}
+.nav li a::before{
+  background: #E91E63;
+  transform-origin: 100% 50%;
+}
+.nav li a:hover::before{
+  transform-origin: 0 50%;
+}
+
+
+/* fin du menu */
+
+.container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
+}
+
+.cube1 {
+  font-family: Inter;
+  color: white;
+  background-color: #219ebc;
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.cube2 {
+  font-family: Inter;
+  color: hsl(36, 100%, 99%);
+  background: hsl(240, 100%, 5%);
+  grid-column: 3/4;
+  grid-row: 2/5;
+  padding: 20px;
+}
+
+.cube3 {
+  font-family: Inter;
+  color: rgb(0, 0, 0);
+  grid-column: 1;
+  grid-row: 4/6;
+}
+
+.cube6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: grid;
+  grid-template-columns: 120px 230px;
+}
+
+.cube7{
+  grid-column: 2/3;
+  grid-row: 6/7;
+  display: grid;
+  grid-template-columns: 120px 230px;
+}
+
+.cube8{
+  grid-column:3/4 ;
+  grid-row:6/7 ;
+  display: grid;
+  grid-template-columns: 120px 230px;
+
+}
+
+.texte_cube{
+  background-color: palevioletred;
+  font-family: Inter;
+  padding: 5px;
+     
+}
+
+.image_cube{
+  display: grid;
+}
+
+p {
+  font-size: 15px;
+  font-family: Inter;
+}
+
+.cube2 h2 {
+  color: hsl(33, 80%, 64%);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.button {
+  background-color:hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  padding: 10px 30px 10px;
+  font-family: Inter;
+  border: 0;
+  letter-spacing: 0.4rem; 
+}
+/* premier essai sur github, valeur initiale 0.2rem sur le letter-spacing */
+
+
